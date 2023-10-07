@@ -28,7 +28,6 @@ const CardHolder = ({ setOpenModalId, type }: CardHoldParams) => {
       switch (type) {
         case "favorite": {
           const favs = await favoriteService.getFavourites();
-          console.log(favs);
           if (favs === null) {
             console.log("There was an issue fetching the favorites list");
             return;
@@ -45,7 +44,6 @@ const CardHolder = ({ setOpenModalId, type }: CardHoldParams) => {
             setMovieRows([]);
             setMovieRows(res);
             setTotalResults(totalResults);
-            console.log(data);
           } else {
             console.log("there was an issue fetching the data");
             setMovieRows([]);

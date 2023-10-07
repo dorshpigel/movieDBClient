@@ -8,9 +8,7 @@ class MovieService {
   async getSpecificMovie<T>(id: string): Promise<T> {
     try {
       const url = `${baseUrl}/${id}?api_key=${process.env.REACT_APP_MOVIE_DB_TOKEN}`;
-      console.log(url);
       const res: AxiosResponse<T> = await axios.get(url);
-      console.log(res.data);
       return res.data;
     } catch (e) {
       throw e;
@@ -29,7 +27,6 @@ class MovieService {
       };
       
       const params = new URLSearchParams(queryParams);
-      console.log(`${baseUrl}/${url}?${params.toString()}`)
       const res: AxiosResponse<T> = await axios.get(
         `${baseUrl}/${url}?${params.toString()}`
       );
