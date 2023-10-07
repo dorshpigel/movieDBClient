@@ -1,0 +1,29 @@
+@import "rsuite/dist/rsuite.css";
+
+#root {
+  padding: 10px;
+}
+
+.text {
+  text-overflow: ellipsis;
+  margin-bottom: 12px;
+  cursor: pointer;
+  word-break: break-all;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.custom-card {
+  margin: 20px !important;
+  max-height: 400px !important;
+  transition: box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  box-shadow: 0 0 10px rgb(56, 156, 252);
+}
+
+.rs-panel-title {
+  text-overflow: ellipsis !important;
+}

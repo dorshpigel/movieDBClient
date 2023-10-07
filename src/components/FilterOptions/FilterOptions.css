@@ -1,0 +1,18 @@
+@import "rsuite/dist/rsuite.css";
+
+#root{ padding: 10px; }
+
+.tile-holder {
+    align-self: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.custom-tile {
+    max-width: 360px;
+}
