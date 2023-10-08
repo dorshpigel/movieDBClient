@@ -31,15 +31,8 @@ This is a MovieDB API client built with React.js & Typescript.
 Note you should bring your own moviedb API token from home as this repo does not supply one.
 
 Setup:
-
-A.With Docker:
-1.Run attached Dockerfile
-2.Add your Token to the .env file on root
-3.npm start (in case you shut it down after running the dockerfile)
-
-B.Without a Dockerfile:
-1.Create a .env file on root
-2.add this variable into it: REACT_APP_MOVIE_DB_TOKEN and add your token.
+1.Create a .env file on root (important!)
+2.add this variable into it: REACT_APP_MOVIE_DB_TOKEN="" and add your token (important!).
 3.run npm install on console on project root
 4.run npm start on console on project root
 

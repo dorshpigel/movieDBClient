@@ -15,8 +15,10 @@
 }
 
 .custom-card {
+  display: "inline-block";
   margin: 20px !important;
-  max-height: 400px !important;
+  width: 240px;
+  max-width: 240px;
   transition: box-shadow 0.3s ease;
 }
 
@@ -26,4 +28,10 @@
 
 .rs-panel-title {
   text-overflow: ellipsis !important;
+}
+
+.card-image {
+  cursor: pointer;
+  height: 300px !important;
+  width: 240px !important;
 }
